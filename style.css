@@ -1090,4 +1090,8 @@ position: fixed;
     .proj-card.featured::after {
       display: none !important;
     }
+
+    .hero-scroll {
+        display: none;
+    }
   }
