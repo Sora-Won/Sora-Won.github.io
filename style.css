@@ -669,13 +669,17 @@ position: fixed;
 }
 
 .proj-arrow {
-    font-size: 1.1rem;
-    color: var(--faint);
-    transition: color 0.2s, transform 0.2s;
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid var(--muted);
+    border-right: 1px solid var(--muted);
+    transform: rotate(45deg);
+    transition: border-color 0.2s, transform 0.2s;
 }
+
 .proj-card:hover .proj-arrow {
-    color: var(--accent);
-    transform: translate(2px, -2px);
+    border-color: var(--accent);
+    transform: rotate(45deg) translate(2px, -2px);
 }
 
 .proj-card h3 {
