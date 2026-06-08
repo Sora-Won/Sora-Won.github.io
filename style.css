@@ -1070,23 +1070,20 @@ position: fixed;
 }
 
 /* ─── PROJECT CARD MOBILE FIX ─── */
-@media (max-width: 560px) {
+@media (max-width: 900px) {
+    .proj-card .proj-arrow,
+    .proj-card:hover .proj-arrow {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      transform: none !important;
+    }
+  
     .proj-top {
-        align-items: flex-start;
-        gap: 1rem;
+      justify-content: flex-start !important;
     }
-
-    .proj-arrow {
-        display: none;
-    }
-
+  
     .proj-card.featured::after {
-        top: 1rem;
-        right: 1rem;
-        font-size: 0.55rem;
+      display: none !important;
     }
-
-    .proj-card {
-        padding: 2rem 1.5rem;
-    }
-}
+  }
