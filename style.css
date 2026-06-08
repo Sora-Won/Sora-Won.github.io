@@ -1056,3 +1056,37 @@ position: fixed;
     .hero-name { font-size: clamp(3.5rem, 15vw, 6rem); }
     .footer { padding: 1.25rem; }
 }
+
+/* ─── MOBILE / TOUCH DEVICE FIX ─── */
+@media (hover: none), (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+  
+    .cursor,
+    .cursor-dot {
+      display: none !important;
+    }
+}
+
+/* ─── PROJECT CARD MOBILE FIX ─── */
+@media (max-width: 560px) {
+    .proj-top {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .proj-arrow {
+        display: none;
+    }
+
+    .proj-card.featured::after {
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.55rem;
+    }
+
+    .proj-card {
+        padding: 2rem 1.5rem;
+    }
+}
