@@ -1,11 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sora Won Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sora Won — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello, I'm Sora Won.</h1>
-    <p>My portfolio website is coming soon.</p>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">SW<span class="blink">_</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-num="01">About</a></li>
+      <li><a href="#experience" data-num="02">Experience</a></li>
+      <li><a href="#projects" data-num="03">Projects</a></li>
+      <li><a href="#contact" data-num="04">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="reveal-line">Sora</span>
+          <span class="reveal-line italic">Won</span>
+        </h1>
+        <p class="hero-role">Software Developer</p>
+      </div>
+
+      <div class="hero-right">
+        <p class="hero-desc">
+          Full-stack developer with enterprise experience in web systems, database-driven applications, and industry placement in aviation software.
+        </p>
+        <div class="hero-skills-float">
+          <span>Full-Stack Dev</span>
+          <span>System Integration</span>
+          <span>Database Design</span>
+          <span>UI/UX Focus</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-main">View Projects <span class="arrow">↓</span></a>
+          <a href="assets/resume.pdf" class="btn-ghost" target="_blank">Resume ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">About</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-headline">
+          <h2>Building things that <em>actually</em> work.</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            I'm completing my <strong>Master of Information Technology</strong> at Griffith University, bringing 2+ years of professional full-stack development and a recent industry placement with <strong>SkyNet Aviation</strong>.
+          </p>
+          <p>
+            I write code that's clean, maintainable, and solves real problems. Open to relocating and eager to grow across full-stack development, UI/UX design, AI-assisted tooling, and modern frontend engineering.
+          </p>
+          <div class="about-location">
+            <span class="loc-dot"></span>
+            Brisbane, QLD · Open to Relocate
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-section">
+        <h3 class="skills-heading">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <div class="skill-icon">⟨/⟩</div>
+            <h4>Frontend</h4>
+            <p>HTML5 · CSS3 · JavaScript · jQuery · AJAX · Bootstrap</p>
+          </div>
+          <div class="skill-block">
+            <div class="skill-icon">{ }</div>
+            <h4>Backend</h4>
+            <p>Java · PHP · C# · Python · Spring · Laravel · JSP · MyBatis</p>
+          </div>
+          <div class="skill-block">
+            <div class="skill-icon">⊡</div>
+            <h4>Database</h4>
+            <p>MySQL · MSSQL · Oracle</p>
+          </div>
+          <div class="skill-block">
+            <div class="skill-icon">◈</div>
+            <h4>Tools</h4>
+            <p>Git · GitHub · Firebase · Figma · Splunk · REST APIs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section exp-section">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Experience</span>
+      </div>
+
+      <h2 class="section-title">Work History</h2>
+
+      <div class="exp-list">
+
+        <article class="exp-item" data-index="01">
+          <div class="exp-meta">
+            <span class="exp-period">Mar 2026 – May 2026</span>
+            <span class="exp-badge new">Recent</span>
+          </div>
+          <div class="exp-body">
+            <h3>Software Developer</h3>
+            <p class="exp-company">SkyNet Aviation</p>
+            <p class="exp-desc">
+              Contributed to a flexible aviation ruleset management system supporting fatigue compliance configuration for non-technical operators. Built dynamic UI components and REST-style API integrations.
+            </p>
+            <div class="exp-tags">
+              <span>PHP</span><span>JavaScript</span><span>AJAX</span>
+              <span>JSON</span><span>MSSQL</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item" data-index="02">
+          <div class="exp-meta">
+            <span class="exp-period">2014 – 2016</span>
+          </div>
+          <div class="exp-body">
+            <h3>Web Programmer · Full-Stack Developer</h3>
+            <p class="exp-company">E4NET, South Korea</p>
+            <p class="exp-desc">
+              Developed and maintained enterprise web platforms for financial institutions, major banks, and government-related clients. Delivered high-availability systems serving thousands of users.
+            </p>
+            <div class="exp-tags">
+              <span>Java</span><span>Spring</span><span>JSP</span>
+              <span>MyBatis</span><span>JavaScript</span><span>MySQL</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section proj-section">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">Projects</span>
+      </div>
+
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="proj-grid">
+
+        <article class="proj-card" data-num="01">
+          <div class="proj-top">
+            <div class="proj-category">Mobile · Unity</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <h3>HealthScan App</h3>
+          <p class="proj-subtitle">Smart Retail Application</p>
+          <p class="proj-desc">
+            Unity-based mobile retail app integrating barcode scanning, OpenFoodFacts API, Firebase services, and product recommendation features.
+          </p>
+          <div class="proj-challenge">
+            <span class="chall-label">Challenge ↓</span>
+            Android/iOS compatibility, UI scaling, camera behaviour, end-to-end frontend design.
+          </div>
+          <div class="proj-tags">
+            <span>Unity</span><span>C#</span><span>Firebase</span><span>API</span><span>Mobile UI/UX</span>
+          </div>
+        </article>
+
+        <article class="proj-card featured" data-num="02">
+          <div class="proj-top">
+            <div class="proj-category">Full-Stack · Web</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <h3>Event Management Website</h3>
+          <p class="proj-subtitle">Laravel Web Application</p>
+          <p class="proj-desc">
+            End-to-end Laravel event platform covering overall website structure, user flow, CRUD operations, AJAX filtering, and pagination with full frontend/backend implementation.
+          </p>
+          <div class="proj-challenge">
+            <span class="chall-label">Challenge ↓</span>
+            Laravel MVC architecture, AJAX filtering, dynamic pagination.
+          </div>
+          <div class="proj-tags">
+            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>AJAX</span>
+          </div>
+        </article>
+
+        <article class="proj-card" data-num="03">
+          <div class="proj-top">
+            <div class="proj-category">Security · Design</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <h3>AI Anti-Tailgating System</h3>
+          <p class="proj-subtitle">Cybersecurity System Design</p>
+          <p class="proj-desc">
+            Designed an AI-assisted physical access control system for tailgating risk reduction in secure environments, including Figma UI and Splunk monitoring dashboard.
+          </p>
+          <div class="proj-challenge">
+            <span class="chall-label">Challenge ↓</span>
+            Figma UI design, Splunk dashboards, log simulation, security monitoring workflows.
+          </div>
+          <div class="proj-tags">
+            <span>Figma</span><span>Splunk</span><span>Cybersecurity</span><span>Risk Analysis</span>
+          </div>
+        </article>
+
+        <article class="proj-card" data-num="04">
+          <div class="proj-top">
+            <div class="proj-category">Java · Team Project</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <h3>Java Tetris Game</h3>
+          <p class="proj-subtitle">Single &amp; Two-Player Modes</p>
+          <p class="proj-desc">
+            JavaFX Tetris game built collaboratively with single and two-player modes. Focused on MVC refactoring, version control collaboration, and maintainable game logic.
+          </p>
+          <div class="proj-challenge">
+            <span class="chall-label">Challenge ↓</span>
+            Git collaboration, MVC refactoring, maintainable game architecture.
+          </div>
+          <div class="proj-tags">
+            <span>Java</span><span>JavaFX</span><span>GitHub</span><span>MVC</span><span>OOP</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-text">Contact</span>
+      </div>
+
+      <div class="contact-inner">
+        <h2 class="contact-headline">
+          Let's build<br/><em>something</em><br/>together.
+        </h2>
+
+        <div class="contact-details">
+          <p class="contact-intro">
+            Open to graduate developer, junior developer, software developer, and full-stack developer opportunities.
+          </p>
+          <a href="mailto:sora.won91@gmail.com" class="contact-email">
+            sora.won91@gmail.com
+          </a>
+          <div class="contact-loc">
+            <span class="loc-dot"></span>
+            Brisbane, QLD · Open to relocate
+          </div>
+          <div class="contact-links">
+            <a href="assets/resume.pdf" target="_blank" class="contact-link">Download Resume ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Sora Won</span>
+    <span>Designed &amp; Built by Sora Won</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
