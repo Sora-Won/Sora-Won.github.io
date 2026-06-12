@@ -1,4 +1,4 @@
-# Hi, I'm Sora Won 👋
+# Hi, I'm Sora Won
 
 I'm a software developer with experience in full-stack web development, enterprise systems, database-driven applications, and practical industry placement in aviation software.
 
