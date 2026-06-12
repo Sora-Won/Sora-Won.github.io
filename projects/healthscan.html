@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthScan App - Sora Won</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-detail-page">
+
+  <div class="noise"></div>
+
+  <nav class="nav scrolled">
+    <a href="../index.html" class="nav-logo">SW<span class="blink">_</span></a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html#about" data-num="01">About</a></li>
+      <li><a href="../index.html#experience" data-num="02">Experience</a></li>
+      <li><a href="../index.html#projects" data-num="03">Projects</a></li>
+      <li><a href="../index.html#contact" data-num="04">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section project-detail-section">
+
+      <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">Project Detail</span>
+      </div>
+
+      <div class="project-hero-detail">
+        <p class="project-detail-kicker">Unity &middot; C# &middot; Mobile Application</p>
+        <h1 class="project-detail-title">
+          HealthScan<br />
+          <em>App</em>
+        </h1>
+        <p class="project-detail-intro">
+          A Unity-based smart retail mobile application that helps users scan food
+          products, review nutrition information, save favourites, and receive
+          healthier product recommendations through API and Firebase integration.
+        </p>
+
+        <div class="hero-actions detail-actions">
+          <a href="#demo" class="btn-main">View Demo <span class="arrow">&darr;</span></a>
+          <a href="../index.html#projects" class="btn-ghost">Back to Selected Work</a>
+        </div>
+      </div>
+
+      <div class="project-detail-layout">
+
+        <div class="project-detail-main">
+
+          <div class="detail-block">
+            <h2>Overview</h2>
+            <p>
+              HealthScan was designed as a mobile retail experience for quick product
+              lookup and healthier decision-making. The app combines barcode scanning,
+              OpenFoodFacts product data, Firebase services, and mobile-first UI screens
+              built in Unity.
+            </p>
+          </div>
+
+          <div class="detail-block">
+            <h2>Key Features</h2>
+            <ul>
+              <li>Barcode scanning flow for retrieving packaged food information.</li>
+              <li>OpenFoodFacts API integration for nutrition and product details.</li>
+              <li>Firebase-backed user data flows for saved products and app state.</li>
+              <li>Product recommendation screens focused on healthier alternatives.</li>
+              <li>Responsive mobile UI layouts designed for Android and iOS behaviour.</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h2>Key Challenges</h2>
+            <ul>
+              <li>Handling camera behaviour consistently across mobile devices.</li>
+              <li>Designing UI layouts that scaled cleanly across screen sizes.</li>
+              <li>Connecting API data, Firebase state, and Unity UI updates smoothly.</li>
+              <li>Balancing functional product lookup with a simple shopping-friendly flow.</li>
+            </ul>
+          </div>
+
+          <div class="detail-block" id="demo">
+            <h2>Demo</h2>
+            <p>
+              The demo shows the app flow from scanning and browsing product information
+              through to recommendation-oriented screens.
+            </p>
+
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="../assets/HealthScan_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="project-detail-side">
+
+          <div class="detail-info-card">
+            <span class="info-label">Tech Stack</span>
+            <p>Unity &middot; C# &middot; Firebase &middot; OpenFoodFacts API &middot; Mobile UI/UX</p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">My Role</span>
+            <p>
+              Frontend design and implementation, API integration support, mobile UI
+              flow, and feature testing across product scanning screens.
+            </p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">Focus Area</span>
+            <p>
+              Mobile interaction design, camera-driven workflows, API data handling,
+              Firebase integration, and user-friendly retail experiences.
+            </p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">Outcome</span>
+            <p>
+              Delivered a working prototype that demonstrates product scanning,
+              nutrition lookup, saved data flows, and recommendation features.
+            </p>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 Sora Won</span>
+    <span>Designed &amp; Built by Sora Won</span>
+  </footer>
+
+</body>
+</html>

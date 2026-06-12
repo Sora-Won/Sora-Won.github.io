@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Management Website - Sora Won</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-detail-page">
+
+  <div class="noise"></div>
+
+  <nav class="nav scrolled">
+    <a href="../index.html" class="nav-logo">SW<span class="blink">_</span></a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html#about" data-num="01">About</a></li>
+      <li><a href="../index.html#experience" data-num="02">Experience</a></li>
+      <li><a href="../index.html#projects" data-num="03">Projects</a></li>
+      <li><a href="../index.html#contact" data-num="04">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section project-detail-section">
+
+      <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Project Detail</span>
+      </div>
+
+      <div class="project-hero-detail">
+        <p class="project-detail-kicker">Laravel &middot; PHP &middot; Full-Stack Web</p>
+        <h1 class="project-detail-title">
+          Event Management<br />
+          <em>Website</em>
+        </h1>
+        <p class="project-detail-intro">
+          A full-stack Laravel event platform covering the main website structure,
+          user-facing event discovery flow, CRUD operations, AJAX filtering, pagination,
+          and database-backed content management.
+        </p>
+
+        <div class="hero-actions detail-actions">
+          <a href="#demo" class="btn-main">View Demo <span class="arrow">&darr;</span></a>
+          <a href="../index.html#projects" class="btn-ghost">Back to Selected Work</a>
+        </div>
+      </div>
+
+      <div class="project-detail-layout">
+
+        <div class="project-detail-main">
+
+          <div class="detail-block">
+            <h2>Overview</h2>
+            <p>
+              This project was built as an end-to-end event management website using
+              Laravel MVC architecture. It supports browsing events, managing event
+              records, filtering event lists dynamically, and presenting paginated
+              content through a clean Bootstrap-based interface.
+            </p>
+          </div>
+
+          <div class="detail-block">
+            <h2>Key Features</h2>
+            <ul>
+              <li>Laravel MVC structure for routing, controllers, models, and views.</li>
+              <li>Event CRUD functionality for creating, viewing, updating, and deleting records.</li>
+              <li>AJAX filtering to update event lists without full page reloads.</li>
+              <li>Pagination for browsing larger event datasets in a manageable way.</li>
+              <li>Responsive frontend pages styled with Bootstrap and custom UI details.</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h2>Key Challenges</h2>
+            <ul>
+              <li>Designing a maintainable Laravel MVC structure across frontend and backend flows.</li>
+              <li>Connecting dynamic filtering with paginated data responses.</li>
+              <li>Keeping user flow clear while supporting full event management operations.</li>
+              <li>Coordinating database queries, validation, and interface state.</li>
+            </ul>
+          </div>
+
+          <div class="detail-block" id="demo">
+            <h2>Demo</h2>
+            <p>
+              The demo walks through the event website flow, including browsing, filtering,
+              and management-oriented screens.
+            </p>
+
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="../assets/bookingSite_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="project-detail-side">
+
+          <div class="detail-info-card">
+            <span class="info-label">Tech Stack</span>
+            <p>Laravel &middot; PHP &middot; MySQL &middot; Bootstrap &middot; AJAX</p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">My Role</span>
+            <p>
+              Full frontend and backend implementation, website structure, CRUD flows,
+              AJAX filtering, pagination, and database-connected pages.
+            </p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">Focus Area</span>
+            <p>
+              MVC architecture, dynamic web interactions, database-driven content,
+              and practical event discovery workflows.
+            </p>
+          </div>
+
+          <div class="detail-info-card">
+            <span class="info-label">Outcome</span>
+            <p>
+              Delivered a functional full-stack web application that demonstrates
+              event browsing, management, filtering, and pagination.
+            </p>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 Sora Won</span>
+    <span>Designed &amp; Built by Sora Won</span>
+  </footer>
+
+</body>
+</html>
